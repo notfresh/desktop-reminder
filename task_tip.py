@@ -11,7 +11,7 @@ while True:
     # print("现在时间是", now.hour, now.minute)
     if(now.hour % 2 == 1 and now.minute > 54  and now.minute <= 59):        
         if( counter < range_tip_count ):
-            messagebox.showinfo("提示","现在时间是{}, 该定期在笔记里写工作总结了".format(now))
+            messagebox.showinfo("提示common","现在时间是{}, 该定期在笔记里写工作总结了".format(now))
             time.sleep(30)        
             counter = counter + 1        
 
@@ -19,6 +19,7 @@ while True:
     if(now.hour % 2 != 1 and counter >= range_tip_count):
         counter = 0
         time.sleep(60*10)
+
 
 
 
